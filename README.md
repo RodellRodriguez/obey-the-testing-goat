@@ -1,2 +1,2 @@
 # obey-the-testing-goat
-Practicing TDD. Functional tests with Selenium. Unit Tests with unittest
+Practicing Test Driven Development (TDD) methodology w/ Django doing a To-Do List app. Functional tests with Selenium. Unit Tests with unittest

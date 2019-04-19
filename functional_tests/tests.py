@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 
-MAX_WAIT = 10
+MAX_WAIT = 3
 
 class NewVisitorTest(LiveServerTestCase):
     
@@ -33,7 +33,7 @@ class NewVisitorTest(LiveServerTestCase):
         # to check out its homepage
         self.browser.get(self.live_server_url)
 
-        # She notices the apge title and header mention to-do lists
+        # She notices the page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
         header_text = self.browser.find_element_by_tag_name('h1').text
         self.assertIn('To-Do', header_text)
